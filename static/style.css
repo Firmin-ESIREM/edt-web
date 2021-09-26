@@ -1,0 +1,64 @@
+.centerbuttons {
+    margin-top: 60px;
+}
+
+p {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    -webkit-appearance: none;
+    background: linear-gradient(to right, #A2CCB6 0%, #FFECD9 50%, #EE786E 100%);
+    background-size: 500%;
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    color: #70726E;
+    cursor: pointer;
+    font: 1.5em Raleway, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 5rem;
+    letter-spacing: .05em;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 20rem;
+}
+
+button:hover {
+    animation-name: gradient;
+    -webkit-animation-name: gradient;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+        color: #70726E;
+    }
+    100% {
+        background-position: 100%;
+        color: #FFF;
+    }
+}
