@@ -3,7 +3,7 @@ from flask_cors import CORS
 from werkzeug.exceptions import NotFound, BadRequest
 from os.path import isfile
 from bjoern import run
-from asyncio import run as run_async
+from threading import Thread
 from pull_edt import pull
 
 app = Flask(__name__)
@@ -21,7 +21,7 @@ ELEMENTS = [
     },
 ]
 
-run_async(pull(ELEMENTS))
+Thread(target=pull, args=(ELEMENTS,)).start()
 
 
 @app.route('/')
@@ -32,7 +32,7 @@ def list_edt():
 @app.route("/edt/")
 def show_edt():
     group = request.args.get("group")
-    if group == None:
+    if group is None:
         raise BadRequest
     if isfile("ics/" + group + ".ics"):
         return render_template("edt.j2", group=group)
@@ -42,7 +42,7 @@ def show_edt():
 @app.route("/ics/")
 def get_ics():
     file = request.args.get("file")
-    if file == None:
+    if file is None:
         raise BadRequest
     path = "ics/" + file + ".ics"
     if isfile(path):
