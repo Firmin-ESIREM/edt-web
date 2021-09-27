@@ -19,6 +19,42 @@ ELEMENTS = [
         "name": "TP1B",
         "url": ""
     },
+    {
+        "name": "TP2C",
+        "url": ""
+    },
+    {
+        "name": "TP2D",
+        "url": ""
+    },
+    {
+        "name": "TP2E",
+        "url": ""
+    },
+    {
+        "name": "TP3F",
+        "url": ""
+    },
+    {
+        "name": "TP3G",
+        "url": ""
+    },
+    {
+        "name": "TP4H",
+        "url": ""
+    },
+    {
+        "name": "TP4I",
+        "url": ""
+    },
+    {
+        "name": "TP5J",
+        "url": ""
+    },
+    {
+        "name": "TP5K",
+        "url": ""
+    }
 ]
 
 Thread(target=pull, args=(ELEMENTS,)).start()
