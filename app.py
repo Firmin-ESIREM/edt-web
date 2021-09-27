@@ -3,7 +3,8 @@ from flask_cors import CORS
 from werkzeug.exceptions import NotFound, BadRequest
 from os.path import isfile
 from bjoern import run
-from requests import get
+from asyncio import run as run_async
+from pull_edt import pull
 
 app = Flask(__name__)
 CORS(app)
@@ -11,10 +12,16 @@ CORS(app)
 
 ELEMENTS = [
     {
-        "name": "TP2A",
+        "name": "TP1A",
         "url": ""
-    }
+    },
+    {
+        "name": "TP1B",
+        "url": ""
+    },
 ]
+
+run_async(pull(ELEMENTS))
 
 
 @app.route('/')
