@@ -1,5 +1,4 @@
 from flask import Flask, request, render_template, send_file
-from flask_cors import CORS
 from werkzeug.exceptions import NotFound, BadRequest
 from os.path import isfile
 from bjoern import run
@@ -7,7 +6,6 @@ from threading import Thread
 from pull_edt import pull
 
 app = Flask(__name__)
-CORS(app)
 
 
 ELEMENTS = [
