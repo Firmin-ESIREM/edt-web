@@ -62,3 +62,13 @@ button:hover {
         color: #FFF;
     }
 }
+
+h1 {
+    color: #5d5f5b;
+    font-family: sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+    font-size: 60px;
+    border-bottom: solid #5d5f5b 6px;
+}
