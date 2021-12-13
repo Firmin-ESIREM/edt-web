@@ -1,7 +1,7 @@
 # EDT web
-Version web d'emplois du temps (via une app [Flask](https://palletsprojects.com/p/flask/) et un serveur [Bjoern](https://github.com/jonashaag/bjoern)) au format ICS accessibles via un lien, actualisés régulièrement et facilement consultables.  
+Version web d’emplois du temps (via une app [Flask](https://palletsprojects.com/p/flask/) et un serveur [Bjoern](https://github.com/jonashaag/bjoern)) au format ICS accessibles via un lien, actualisés régulièrement et facilement consultables.  
 
-Dépend d'[Open Web Calendar](https://openwebcalendar.herokuapp.com/).
+Dépend d’[Open Web Calendar](https://openwebcalendar.herokuapp.com/).
 
 ## __________
 

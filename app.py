@@ -10,48 +10,8 @@ app = Flask(__name__)
 
 ELEMENTS = [
     {
-        "name": "TP1A",
-        "url": ""
-    },
-    {
-        "name": "TP1B",
-        "url": ""
-    },
-    {
-        "name": "TP2C",
-        "url": ""
-    },
-    {
-        "name": "TP2D",
-        "url": ""
-    },
-    {
-        "name": "TP2E",
-        "url": ""
-    },
-    {
-        "name": "TP3F",
-        "url": ""
-    },
-    {
-        "name": "TP3G",
-        "url": ""
-    },
-    {
-        "name": "TP4H",
-        "url": ""
-    },
-    {
-        "name": "TP4I",
-        "url": ""
-    },
-    {
-        "name": "TP5J",
-        "url": ""
-    },
-    {
-        "name": "TP5K",
-        "url": ""
+        "name": "German_Holidays",
+        "url": "https://www.calendarlabs.com/ical-calendar/ics/46/Germany_Holidays.ics"
     }
 ]
 
