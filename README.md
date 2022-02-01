@@ -6,4 +6,4 @@ Dépend d’[Open Web Calendar](https://openwebcalendar.herokuapp.com/).
 ## __________
 
 Ce programme informatique est ditribué sous la [licence GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.fr.html).  
-© 2021, Firmin Launay ([Firmin_Launay@etu.u-bourgogne.fr](mailto:Firmin_Launay@etu.u-bourgogne.fr))
+© 2022, Firmin Launay ([Firmin_Launay@etu.u-bourgogne.fr](mailto:Firmin_Launay@etu.u-bourgogne.fr))
